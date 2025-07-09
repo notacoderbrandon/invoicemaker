@@ -5,7 +5,7 @@
   "description": "A desktop application for generating professional invoices",
   "author": "Invoice Generator Team",
   "main": "public/electron.js",
-  "homepage": "./",
+  "homepage": "https://brandon-r-ramos.github.io/invoicemaker/",
   "dependencies": {
     "@emotion/react": "^11.11.3",
     "@emotion/styled": "^11.11.0",
@@ -30,6 +30,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "electron": "electron .",
     "electron-dev": "ELECTRON_IS_DEV=1 electron .",
     "build-electron": "npm run build && electron-builder",
@@ -57,7 +59,8 @@
   "devDependencies": {
     "electron": "^37.2.0",
     "electron-builder": "^26.0.12",
-    "electron-is-dev": "^3.0.1"
+    "electron-is-dev": "^3.0.1",
+    "gh-pages": "^6.3.0"
   },
   "build": {
     "appId": "com.invoicegenerator.app",
