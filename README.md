@@ -82,4 +82,4 @@ The application is built using:
 
 ## License
 
-MIT License 
+MIT License # invoicemaker
